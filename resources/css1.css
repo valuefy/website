@@ -1,6 +1,12 @@
 .material-icons{
     display: none;
 }
+.color_dot{
+    color: #f8c91c;
+}
+.color{
+    color: #FF9600;
+}
 .logo{
     float: left;
     margin-top: 30px;
@@ -60,6 +66,7 @@ body{
 .section{
     background-color: #FF9600;
     color: white;
+    overflow: hidden;
 }
 .section .row h2{
     font-family: "Montserrat" !important;
@@ -72,10 +79,12 @@ body{
 }
 .section_1{
     text-align: center;
+    overflow: hidden;
 }
 .section_2{
     background-color: #1E2330;
     color: #FFFFFF;
+    overflow: hidden;
 }
 .banner_2{
     overflow: hidden;
@@ -121,10 +130,12 @@ body{
 }
 .section_3{
     margin-bottom: 100px;
+    overflow: hidden;
 }
 .footer{
     padding-top: 80px;
     border-top: 1px solid #eeeeee;
+    overflow: hidden;
 }
 .footer_h2{
     font-size: 30px;
