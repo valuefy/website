@@ -11,9 +11,16 @@
 .tabs{
     margin-top: 30px;
 }
+.color{
+    color: #FF9600;
+}
+.color_dot{
+    color: #F8C91C;
+}
 body{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-top: 50px;
@@ -60,11 +67,11 @@ body{
 .section{
     background-color: #FF9600;
     color: white;
+    overflow: hidden;
 }
 .section .row h2{
-    font-family: "Montserrat" !important;
     text-align: center;
-    font-weight: 700 !important;
+    font-weight: 800 !important;
     letter-spacing: 1px !important;
     font-size: 90px !important;
     padding-bottom: 140px;
@@ -72,10 +79,12 @@ body{
 }
 .section_1{
     text-align: center;
+    overflow: hidden;
 }
 .section_2{
     background-color: #1E2330;
     color: #FFFFFF;
+    overflow: hidden;
 }
 .banner_2{
     overflow: hidden;
@@ -121,10 +130,12 @@ body{
 }
 .section_3{
     margin-bottom: 100px;
+    overflow: hidden;
 }
 .footer{
     padding-top: 80px;
     border-top: 1px solid #eeeeee;
+    overflow: hidden;
 }
 .footer_h2{
     font-size: 30px;
@@ -143,6 +154,7 @@ body{
 }
 .h2_about_section_2{
     margin-top: 160px;
+    font-weight: 800 !important;
 }
 .h_2_{
     font-size: 30px;
@@ -186,6 +198,10 @@ body{
 }
 .background{
     margin-top: 20px;
+}
+.about_h2{
+    float: left;
+    font-size: 1.5em;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -262,6 +278,9 @@ body{
     .footer_h2{
         font-size: 24px;
         margin-right: 80px;
+    }
+    .about_h2{
+        margin-left: 30px;
     }
 }
 @media only screen and (max-width: 425px){
@@ -391,6 +410,10 @@ body{
     .h_2_{
         font-size: 26px;
     }
+    .p_about{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 @media only screen and (max-width: 320px){
     .logo{
@@ -401,7 +424,7 @@ body{
         display: none;
     }
     .secton_2_p {
-        margin: 40px 80px 10px 20px;
+        margin: 40px 60px 10px 60px;
     }
     .banner_2{
         padding: 20px 70px 0px 20px;
