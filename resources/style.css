@@ -11,9 +11,14 @@
 .tabs{
     margin-top: 30px;
 }
+.primary-color{
+    color: #FF9600;
+}
+.secondary-color{
+    color: #F8C91C;
+}
 body{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-top: 50px;
@@ -60,22 +65,24 @@ body{
 .section{
     background-color: #FF9600;
     color: white;
+    overflow: hidden;
 }
 .section .row h2{
-    font-family: "Montserrat" !important;
     text-align: center;
-    font-weight: 700 !important;
-    letter-spacing: 1px !important;
-    font-size: 90px !important;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 90px;
     padding-bottom: 140px;
     padding-top: 80px;
 }
 .section_1{
     text-align: center;
+    overflow: hidden;
 }
 .section_2{
     background-color: #1E2330;
     color: #FFFFFF;
+    overflow: hidden;
 }
 .banner_2{
     overflow: hidden;
@@ -89,9 +96,9 @@ body{
     font-size: 30px;
 }
 .section_2_p2{
-    font-size: 16px !important;
+    font-size: 16px;
     text-align: left;
-    line-height: 30px !important;
+    line-height: 30px;
     font-weight: 300;
     letter-spacing: 0.02em;
 }
@@ -121,10 +128,12 @@ body{
 }
 .section_3{
     margin-bottom: 100px;
+    overflow: hidden;
 }
 .footer{
     padding-top: 80px;
     border-top: 1px solid #eeeeee;
+    overflow: hidden;
 }
 .footer_h2{
     font-size: 30px;
@@ -143,6 +152,8 @@ body{
 }
 .h2_about_section_2{
     margin-top: 160px;
+    font-weight: 800;
+    font-size: 46px;
 }
 .h_2_{
     font-size: 30px;
@@ -187,14 +198,17 @@ body{
 .background{
     margin-top: 20px;
 }
+.about_h2{
+    font-size: 22px;
+}
 
 @media only screen and (max-width: 1440px) {
     .section .row h2{
-        font-family: "Montserrat" !important;
+        font-family: "Montserrat";
         text-align: center;
-        font-weight: 600 !important;
-        letter-spacing: 1px !important;
-        font-size: 70px !important;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 70px;
         padding-bottom: 140px;
         padding-top: 80px;
     }
@@ -212,11 +226,10 @@ body{
 }
 @media only screen and (max-width: 1024px){
     .section .row h2{
-        font-family: "Montserrat" !important;
         text-align: center;
-        font-weight: 500 !important;
-        letter-spacing: 1px !important;
-        font-size: 50px !important;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 50px;
         padding-bottom: 140px;
         padding-top: 80px;
     }
@@ -245,9 +258,9 @@ body{
         float: right;
     }
     .section_2_p2{
-        font-size: 14px !important;
+        font-size: 14px;
         text-align: left;
-        line-height: 20px !important;
+        line-height: 20px;
         font-weight: 200;
         letter-spacing: 0.02em;
     }
@@ -263,6 +276,9 @@ body{
         font-size: 24px;
         margin-right: 80px;
     }
+    .about_h2{
+        margin-left: 30px;
+    }
 }
 @media only screen and (max-width: 425px){
     .logo{
@@ -272,7 +288,7 @@ body{
         top: 0px;
     }
     .container{
-        width: 100% !important;
+        width: 100%;
     }
     .material-icons{
         display: inline;
@@ -287,21 +303,20 @@ body{
         display: none;
     }
     .section .row h2{
-        font-family: "Montserrat" !important;
         text-align: center;
-        font-weight: 400 !important;
-        letter-spacing: 1px !important;
-        font-size: 40px !important;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 40px;
         padding-bottom: 60px;
         padding-top: 60px;
     }
     .section_1 .row h2{
-        margin-top: 60px !important;
+        margin-top: 60px;
         font-size: 26px ;
     }
     .section_1 .row p{
-        line-height: 20px !important;
-        padding-bottom: 40px !important;
+        line-height: 20px;
+        padding-bottom: 40px;
     }
     .secton_2_p{
         margin: 50px 20px 20px 20px;
@@ -391,6 +406,10 @@ body{
     .h_2_{
         font-size: 26px;
     }
+    .p_about{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 @media only screen and (max-width: 320px){
     .logo{
@@ -401,7 +420,7 @@ body{
         display: none;
     }
     .secton_2_p {
-        margin: 40px 80px 10px 20px;
+        margin: 40px 60px 10px 60px;
     }
     .banner_2{
         padding: 20px 70px 0px 20px;

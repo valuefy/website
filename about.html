@@ -2,23 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>valuefy</title>
+    <title>Valuefy</title>
 
     <link rel="icon" href="resources/icon_tab.png">
 
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="vendors/bower_components/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="vendors/bower_components/materialize/dist/css/materialize.min.css"
+          media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="stylesheet" href="resources/css1.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="resources/style.css">
+
 </head>
 <body>
+
     <ul id="slide-out" class="side-nav ">
         <li><div class="userView">
             <div class="background">
@@ -48,7 +53,6 @@
                         <img src="resources/logo-ppt.png" class="logo">
                     </a>
                 </div>
-
                 <div class="offset-l2 offset-m1 col l6 col m6">
                     <ul class="tabs">
                         <li class="tab col l4"><a href="index.html">HOME</a></li>
@@ -59,31 +63,38 @@
             </div>
         </div>
     </div>
+
     <div class="section_2">
         <div class="row">
             <div class="offset-l3 col l6">
                 <h2 class="h2_about_section_2">
-                    Games concept testing<font color="#FF9600">.</font>
+                    Games concept testing<span class="primary-color">.</span>
                 </h2>
             </div>
         </div>
         <div class="row">
             <div class="offset-l3 col l6">
                 <p class="section_2_p3">
-                    Here at ValueFY we are passionate about testing game concepts. We have seen a lot of time, effort, brilliant artwork and millions invested in prototypes going in vein only because of a wrong "idea" or "concept".<br>
+                    Here at ValueFY we are passionate about testing game concepts. We have seen a lot of time, effort,
+                    brilliant artwork and millions invested in prototypes going in vein only because of a wrong "idea" or "concept".
                     <br>
-                    We also know a lot about research - and how most of user research done today deals with simple questioning or "stated intent". This is not always right because users often aren't aware of their decision making process. We have learned this thorough more than a decade of implicit research that involved neuro methods such as EEG, facial coding, eye tracking and simulations.<br>
+                    <br>
+                    We also know a lot about research - and how most of user research done today deals with simple questioning or "stated intent".
+                    This is not always right because users often aren't aware of their decision making process. We have learned this thorough more than
+                    a decade of implicit research that involved neuro methods such as EEG, facial coding, eye tracking and simulations.
+                    <br>
                     <br>
                     Our focus is mostly on mobile games.
                 </p>
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             <div class="offset-l1 col l10">
-                <h2 style="float: left">
-                    <b><font size="5">How it works?</font></b>
+                <h2 class="about_h2">
+                    <b>How it works?</b>
                 </h2>
             </div>
         </div>
@@ -91,16 +102,20 @@
             <div class="offset-l1 col l10">
                 <h2 style="text-align: center" class="h_2_"><b>
                     All of our predictive power in one simple score: Value
-                    <font color="#ff9600">FY EDGE</font></b>
+                    <span class="primary-color">FY EDGE</span></b>
                 </h2>
             </div>
         </div>
         <div class="row">
             <div class="offset-l1 col l10">
                 <p class="p_about">
-                    EDGE® is research data science. Based on our database of tested games concepts whose performance was later tracked after publishing, we were able to come up with a metric that models the chance of an app/game concept being adopted instead of competitive apps. EGDE is a margin of the tested app/game upon launching.  EDGE® generalizes our data science learnings into a simple metric ranging from 0% to 100%.
+                    EDGE® is research data science. Based on our database of tested games concepts whose performance was
+                    later tracked after publishing, we were able to come up with a metric that models the chance of an app/game
+                    concept being adopted instead of competitive apps. EGDE is a margin of the tested app/game upon launching.
+                    EDGE® generalizes our data science learnings into a simple metric ranging from 0% to 100%.
                     <br><br>
-                    •High EDGE® implies a high chance of early adopters accepting and spreading the app. Development and marketing up to high standards will ensure top performance and viral growth
+                    •High EDGE® implies a high chance of early adopters accepting and spreading the app. Development and
+                    marketing up to high standards will ensure top performance and viral growth
                     <br>
                     •Apps that score averagely have moderate chances of success <br>
                     •Low EDGE® normally translates into a low or negative ROI for your development and marketing efforts. Consider pivoting
@@ -121,6 +136,7 @@
     <script type="text/javascript" src="vendors/bower_components/materialize/dist/js/materialize.min.js"></script>
 
     <script>
+
         $(window).scroll(function(){
             var header = $('.header'),
                 scroll = $(window).scrollTop();
@@ -136,26 +152,8 @@
                 }
             }
         });
-    </script>
-    <script>
-        // Initialize collapse button
-        $(".button-collapse").sideNav();
-        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-        //$('.collapsible').collapsible();
-        $('.button-collapse').sideNav({
-                menuWidth: 300, // Default is 300
-                edge: 'left', // Choose the horizontal origin
-                closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-                draggable: true // Choose whether you can drag to open on touch screens
-            }
-        );
-    </script>
 
-    <script>
         $(document).ready(function(){
-//            $('ul.tabs > a').on('click', function(){
-//                alert('asd');
-//            })
             $('ul.tabs').tabs({
                 onShow: function() {
                     var link = $(this).attr('href');
@@ -165,6 +163,16 @@
                 }
             });
         });
+
+        $(".button-collapse").sideNav();
+        $('.button-collapse').sideNav({
+                menuWidth: 300, // Default is 300
+                edge: 'left', // Choose the horizontal origin
+                closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                draggable: true // Choose whether you can drag to open on touch screens
+            }
+        );
+
     </script>
 
 </body>
